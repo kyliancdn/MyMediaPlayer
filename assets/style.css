@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+body > div {
+    display: inline;
+    max-width: 800px;
+    width: 100%;
+}
+
+video {
+    display: block;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#play::before {
+    content: '/f144';
+    font-family: 'Font Awesome 5 Free';
+}
+
+#bar {
+    background: rgb(255,166,0);
+    background: linear-gradient(90deg, rgba(255,166,0,1) 0%, rgb(249, 133, 0) 100%);
+    height: 1rem;
+}
+
+#barCont {
+    display: block;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+#playMid {
+    position: absolute;
+    width: 10rem;
+    top: 30%;
+    left: 45%;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
